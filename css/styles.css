@@ -65,10 +65,6 @@ nav {
     gap: 20px;
 }
 
-.header-container .profile-links svg {
-    width: 100%;
-}
-
 .header-container .profile-section a{
     color: var(--alabaster-grey);
     text-decoration: none;
@@ -94,3 +90,41 @@ nav {
     align-content: center;
 }
 
+.education-container .background-image {
+    width: 100%;
+    height: 70vh;
+    background-image: url('../assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.section-title {
+    padding: 20px;
+}
+
+.education-background {
+    display: block;
+    color: var(--alabaster-grey);
+    z-index: 2;
+}
+
+@media (max-width: 748px) {
+    .header-container {
+        flex-direction: column;
+    }
+    .header-container .profile-section {
+        width: 80%;
+    }
+}
