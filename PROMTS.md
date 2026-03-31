@@ -1,59 +1,35 @@
-AI Use Declaration & Prompt Log
-Appendix A: AI Use Declaration
-AI Tool(s) Used: Gemini 3 Flash
-Purpose of AI Use (check all that apply): * [ ] brainstorming
+# Appendix A: AI Use Declaration
 
-[x] layout/UI ideas
-
-[x] debugging
-
-[x] code generation
-
-[ ] refactoring
-
-[x] styling suggestions
-
+**AI Tool(s) Used:** Gemini
+**Purpose of AI Use (check all that apply):** [ ] brainstorming 
+[x] layout/UI ideas 
+[x] debugging 
+[x] code generation 
+[ ] refactoring 
+[x] styling suggestions 
 [ ] other: ____________
 
-Where AI was used (short description):
-Applied to the Raven Resume project to implement CSS overlays for background images and to create a fixed parallax scrolling effect for the education section.
+**Where AI was used (short description):**
+I used AI to help figure out the CSS positioning for a dark overlay on a background image and to implement a fixed parallax scrolling effect for the education section of my resume website.
 
 I confirm that I reviewed, tested, and understood the final code I submitted.
 
-Appendix B: AI Prompt Log
-Entry #1
-Tool Used: Gemini 3 Flash
-Prompt (copy-paste exactly): ```html
-
-<div class="background-image">
-<img src="assets/background.jpg" alt="background">
-<div class="overlay">
-
-            </div>
-        </div>
-How to overlay this
-
-**AI Output (summary):** Provided the CSS positioning logic required to layer a `div` on top of an image. It explained the use of `position: relative` on the parent and `position: absolute` on the child overlay, along with `rgba` for transparency.
-
-**How I used/modified it in my project:** I integrated the absolute positioning and flexbox centering into my `styles.css` to ensure the overlay covered the full width of the background and centered future content.
-
 ---
 
-### Entry #2
-**Tool Used:** Gemini 3 Flash
-**Prompt (copy-paste exactly):**
-```text
-I want the img to stay where it is while scrolling do not add comments
-AI Output (summary): Advised moving the background image from an HTML tag to a CSS background-image property to utilize background-attachment: fixed.
+# Appendix B: AI Prompt Log
 
-How I used/modified it in my project: I refactored the .education-container to use a CSS-based background. This achieved a professional parallax effect where the image remains stationary as the user scrolls through the resume details.
+## Entry #1
+**Tool Used:** Gemini
+**Prompt (copy-paste exactly):** ```html
+<div class="background-image">
+    <img src="assets/background.jpg" alt="background">
+    <div class="overlay">
+        
+    </div>
+</div>
 
-Entry #3
-Tool Used: Gemini 3 Flash
-Prompt (copy-paste exactly):
+How to overlay this
 
-Plaintext
-how about if I want to put content?
-AI Output (summary): Demonstrated how to nest HTML elements within the overlay div and provided flexbox rules to align that content (headings and paragraphs) perfectly in the center of the background section.
+AI Output (summary or screenshot reference): The AI explained how to use CSS positioning. It suggested setting the parent container to position: relative and the overlay to position: absolute with top: 0 and left: 0, using an rgba background color for transparency.
 
-How I used/modified it in my project: I added my university details (USTP) and degree information inside the overlay structure to make the Education section informative yet visually striking.
+How I used/modified it in my project: I applied the absolute positioning rules to my .overlay class in styles.css to create a dark, transparent layer over my background image.
