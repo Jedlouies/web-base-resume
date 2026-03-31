@@ -2,7 +2,8 @@ body {
     margin: 0 auto;
     display: block;
     height: 120vh;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
     color: var(--alabaster-grey);
 
     --ink-black: #0d1b2aff;
@@ -13,7 +14,7 @@ body {
 }
 
 header {
-    height: 60vh;
+    height: auto;
     background-color: var(--ink-black);
     padding: 20px;
 }
@@ -48,24 +49,38 @@ nav {
 }
 
 .header-container .profile-section {
-    height: 50vh;
     width: 20%;
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.header-container .profile-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     gap: 20px;
+}
+
+.header-container .profile-links svg {
+    width: 100%;
 }
 
 .header-container .profile-section a{
     color: var(--alabaster-grey);
     text-decoration: none;
-    
+}
+
+.header-container .profile-section a:hover{
+    color: var(--dusty-denim);
 }
 
 .header-container .profile-section .profile-picture img {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: auto;
     border-radius: 50%;
     border: solid 2px var(--alabaster-grey);
     background-size: cover;
@@ -74,8 +89,8 @@ nav {
 }
 
 .header-container .description-section {
-    height: 50vh;
     width: 80%;
     padding: 10px;
+    align-content: center;
 }
 
