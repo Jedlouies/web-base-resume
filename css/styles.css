@@ -93,7 +93,7 @@ nav {
 
 .education-container .background-image {
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     background-image: url('../assets/background.jpg');
     background-size: cover;
     background-position: center;
@@ -123,7 +123,7 @@ nav {
 
 .education-card {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: flex;
     gap: 30px;
     justify-content: center;
@@ -135,11 +135,11 @@ nav {
 }
 
 .logo {
-    width: 10%;
+    width: 150px;
 }
 
 .education-info {
-    width: 30%;
+    width: 600px;
 }
 
 .skills-container {
@@ -155,5 +155,16 @@ nav {
     }
     .header-container .profile-section {
         width: 80%;
+    }
+
+    .education-card {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .education-container .background-image {
+        height: 90vh;
     }
 }
